@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <form id="my_form">
+        <div id="heading">
+            <h1>SURVEY FORM</h1>
+        </div>
+        <div id="name">
+            <label for="fname lname">Name</label>
+            <input type="text" name="fname" placeholder="First Name" required />
+            <input type="text" name="lname" placeholder="Last Name" required />
+        </div>
+        <div id="dob">
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" required>
+        </div>
+        <div id="profession">
+            <label for="profession">Profession</label>
+            <input type="text" name="profession" placeholder="Enter your profession" required>
+        </div>
+        <div id="country">
+            <label for="country">Country</label>
+            <select name="country" required>
+                <option value="country" selected>Country</option>
+                <option value="India">India</option>
+                <option value="pakistan">Pakistan</option>
+                <option value="Nepal">Nepal</option>
+                <option value="China">China</option>
+                <option value="USA">USA</option>
+                <option value="Australia">Australia</option>
+                <option value="UK">UK</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="New Zeland">New Zeland</option>
+                <option value="Germany">Germany</option>
+                <option value="Canada">Canada</option>
+                <option value="Israel">Israel</option>
+                <option value="South Africa">South Africa</option>
+                <option value="West Indies">West Indies</option>
+                <option value="others">Others(Not in the list)</option>
+            </select>
+        </div>
+        <div id="gender">
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+            <input type="radio" name="gender" value="others">Others
+        </div>
+        <div id="email">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div id="mobile">
+            <label for="mobile">Mobile number</label>
+            <input type="number" name="mobile" placeholder="Enter your mobile number" required>
+        </div>
+        <div class="button">
+            <button type="reset" id="submit">Submit</button>
+            <button type="reset" id="reset">Reset</button>
+        </div>
+        <footer>
+            Designed by Harshit Mahajan
+        </footer>
+
+
+    </form>
+    <div id="thank_you" style="display: none;">
+        <p>Thanks for filling up the form!</p>
+        <button type="submit" id="close" >Close</button>
+    </div>
+
+    <script src="script.js"></script>
+    
+
+</body>
+
+</html>
